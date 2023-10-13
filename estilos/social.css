@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Para esconder a barra de rolagem*/
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+img{
+    width: 100vw;
+}
+
+a{
+    /*Posicionamento*/
+    display: block;
+    padding: 20px;
+    /*Cor*/
+    background-color: darkred;
+    color: white;
+    /*Texto*/
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+
+}
+
+a:hover{
+    background-color: red;
+    transition: background-color .4s; /*Como fazer o transition quando o mouse sai??*/
+}
+/*Utilizar o :not(:hover) para reduzir quando o mouse sai*/
+a:not(hover){
+    background-color: darkred;
+    transition: background-color .4s; 
+}
